@@ -1,20 +1,19 @@
-/* A condensed resume
- * - rlyeh // https://github.com/r-lyeh/
- */
+/** A condensed resume - https://r-lyeh.github.io  *
+ * - rlyeh                                        **/
 
 #ifdef RESUME_EXTRA
 #   include <stdlib.h>                      // C
 #   include <algorithm>                     // C++ & STL
 #   include <thread>                        // C++11
 
-#   include <v8/v8.h>                       // V8
-#   include <lua/lua.h>                     // Lua
-#   include <squirrel/squirrel.h>           // Squirrel
+#   include <v8/v8.h>                       // V8, Javascript
+#   include <lua/lua.h>                     // Lua, Moonscript
 #   include <angelscript/angelscript.h>     // Angelscript
-#   include <lisp/many.h>                   // SBCL
-#   include <scheme/many.h>                 // R6RS
+#   include <squirrel/squirrel.h>           // Squirrel
+#   include <lisp/many.h>                   // CL, derivatives
+#   include <scheme/many.h>                 // R6RS, derivatives
 
-#   include <GL/gl.h>                       // OpenGL, shaders
+#   include <GL/gl.h>                       // OpenGL, shaders, extensions, glut...
 #   include <AL/al.h>                       // OpenAL
 
 #   include <Windows.h>                     // Win32 API
@@ -24,23 +23,21 @@
 #   include <enet/enet.h>                   // Reliable UDP sockets, NAT traversal
 
 #   include <msgpack.hpp>                   // Serialization, messaging
-//  [...]
+//  [...]                                   // Etc.
 #endif
 
 #include <iostream>
 #include <string>
 #include <map>
 
-void main()
-{
-    struct str : public std::string {
-        str() {}
+int main() {
+    struct string : public std::string {
+        string() {}
         std::string operator =( const std::string &s ) {
             return assign( s.find(*this) != npos ? s : *this + "\n\t" + s );
-        }
-    };
+    }   };
 
-    std::map< int, str > all, &bio  = all, &edu  = all,
+    std::map< int, string > all, &bio = all, &edu = all,
         &task = all, &game = all, &like = all, &meta = all, &link = all;
 
      bio[ 1978 ] = "Mario \"rlyeh\" Rodriguez, 09/26 @ Seville/ES";
@@ -64,20 +61,21 @@ void main()
     game[ 2010 ] =
     game[ 2011 ] = "Freak Wars: Torrente Online 2 (Windows)";
 
-    like[ 2000 ] = "Emulation/JIT/virtual machines";
+    like[ 2000 ] = "Emulation/JIT/Compilers/Virtual machines";
     like[ 2009 ] = "Storytelling";
     like[ 2010 ] = "Cinematography";
     like[ 2010 ] = "Locomotion";
     like[ 2011 ] = "Data-driven development";
     like[ 2012 ] = "Character design";
     like[ 2012 ] = "Readable code";
+    like[ 2013 ] = "Data structures";
 
     meta[ 2006 ] = "<3 Pixels";
     meta[ 2006 ] = "<3 Zombies";
     meta[ 2010 ] = "<3 Rock";
     meta[ 2010 ] = "<3 Scifi";
 
-    link[ 2013 ] = "https://github.com/r-lyeh/";
+    link[ 2014 ] = "https://r-lyeh.github.io/";
 
     for( auto &entry : all )
         std::cout << entry.first << ":\t" << entry.second << std::endl;
