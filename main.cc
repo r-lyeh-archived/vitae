@@ -1,4 +1,4 @@
-/** My self-compilable C++ resume - https://github.com/r-lyeh/status  *
+/** My self-compilable C++ resume - https://github.com/r-lyeh/statvs  *
  * - rlyeh                                                           **/
 
 #ifdef RESUME_EXTRA
@@ -47,6 +47,8 @@ int main() {
     role[ 2013 ] = "Lord of Memory at Gameloft Madrid";
     role[ 2014 ] = "Compression Wizard at Gameloft Madrid";
     role[ 2015 ] = "Texture Berserker at Gameloft Madrid";
+    role[ 2015 ] = "TransPorting Engineer at BlitWorks";
+    role[ 2016 ] = "Serious Programmer at TequilaWorks";
 
     game[ 2007 ] = "Imagine: Pet Vet (DS)";
     game[ 2008 ] = "My Eco Planet (DS & DSi)";
@@ -59,7 +61,9 @@ int main() {
     game[ 2011 ] = "Freak Wars: Torrente Online 2 (Windows)";
     game[ 2013 ] = "Gods of Rome (iOS)(upcoming :)";
     game[ 2014 ] = "Asphalt Overdrive (iOS)";
-    game[ 2015 ] = "Unannounced game (Android)";
+    game[ 2015 ] = "NOVA Legacy (Android)";
+    game[ 2015 ] = "Crypt of the NecroDancer (PSVita)";
+    game[ 2016 ] = "RiME (PS4)";
 
     like[ 2000 ] = "+1 Emulation/JIT/Compilers/Virtual machines";
     like[ 2009 ] = "+1 Storytelling";
@@ -70,6 +74,7 @@ int main() {
     like[ 2012 ] = "+1 Readable code";
     like[ 2013 ] = "+1 Data structures";
     like[ 2014 ] = "+1 Texture and data-compression";
+    like[ 2015 ] = "+1 Orthodox minimalistic C+";
 
     love[ 2006 ] = "<3 Pixels";
     love[ 2006 ] = "<3 Zombies";
@@ -77,7 +82,7 @@ int main() {
     love[ 2010 ] = "<3 Scifi";
     love[ 2013 ] = "<3 Stoner Rock";
 
-    link[ 2016 ] = "https://github.com/r-lyeh/status";
+    link[ 2017 ] = "https://github.com/r-lyeh/statvs";
 
     for( auto &entry : any ) {
         std::cout << entry.first << ":\t" << entry.second << std::endl;
