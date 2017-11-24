@@ -64,6 +64,7 @@ int main() {
     game[ 2015 ] = "NOVA Legacy (Android)";
     game[ 2015 ] = "Crypt of the NecroDancer (PSVita)";
     game[ 2016 ] = "RiME (PS4)";
+    game[ 2017 ] = "The Invisible Hours (VR) (PS4)";
 
     like[ 2000 ] = "+1 Emulation/JIT/Compilers/Virtual machines";
     like[ 2009 ] = "+1 Storytelling";
@@ -75,6 +76,7 @@ int main() {
     like[ 2013 ] = "+1 Data structures";
     like[ 2014 ] = "+1 Texture and data-compression";
     like[ 2015 ] = "+1 Orthodox minimalistic C+";
+    like[ 2016 ] = "+1 Plain C";
 
     love[ 2006 ] = "<3 Pixels";
     love[ 2006 ] = "<3 Zombies";
